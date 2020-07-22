@@ -1,5 +1,5 @@
 # Pega 7 Requestors Monitoring
-Pega 7 requestors amount monitoring
+Simple Pega 7 requestors amount monitoring tool
 
 ## Usage
 This tool has two ways to be used
