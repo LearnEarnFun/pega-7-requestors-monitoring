@@ -12,13 +12,13 @@ Import `requestors_monitoring` function to your module
 from requestors_monitoring import requestors_monitoring
 ```
 
-Firs argument of function is your nodes URLs in format like `http://pega:1111`
+Firs argument of function is a list of your nodes URLs in format like `http://pega:1111`
 
 Second argument is time between monitoring requests in secconds
 
 
 ### Command line
-Fill `NODES` list variable with your nodes URLs in format like `http://pega:1111`
+Fill `NODES` list variable with a list of your nodes URLs in format like `http://pega:1111`
 
 Change `PERIOD` variable to change time between monitoring requests in secconds
 
