@@ -1,4 +1,6 @@
 # Pega 7 Requestors Monitoring
+[![CodeFactor](https://www.codefactor.io/repository/github/mishankov/pega-7-requestors-monitoring/badge)](https://www.codefactor.io/repository/github/mishankov/pega-7-requestors-monitoring)
+
 Simple Pega 7 requestors amount monitoring tool
 
 ## Usage
