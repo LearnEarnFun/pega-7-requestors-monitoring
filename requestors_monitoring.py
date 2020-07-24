@@ -10,9 +10,7 @@ def requestors_monitoring(nodes: List[str], period: int):
         string_to_write = '{}'.format(datetime.datetime.time(datetime.datetime.now()))
         for node in nodes:
             try:
-                node_content = urlopen(
-                    node + '/prweb/PRRestService/monitor/pingService/ping'
-                ).read().decode("utf-8")  # nosec
+                node_content = urlopen(node + '/prweb/PRRestService/monitor/pingService/ping').read().decode("utf-8")  # nosec
                 node_content_dict = json.loads(node_content)
             except Exception as e:
                 print('Exception occurred: {};\tString to write: {}'.format(e, string_to_write))
