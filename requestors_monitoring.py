@@ -12,7 +12,8 @@ def requestors_monitoring(nodes: List[str], period: int):
             try:
                 node_content = urlopen(Request(node + '/prweb/PRRestService/monitor/pingService/ping')).read().decode("utf-8")
                 node_content_dict = json.loads(node_content)
-            except:
+            except Exception as e:
+                print('Exception occurred: {};\tString to write: {}'.format(e, string_to_write))
                 node_content_dict = {"count": 0}
 
             string_to_write += ',{}'.format(node_content_dict["count"])
